@@ -1,0 +1,10 @@
+{
+  "requiredEnvironments": [
+    {
+      "name": "FORGE_RELEASE_MIRROR",
+      "description": "Custom forge release mirror",
+      "required": false,
+      "default": "https://releases.arcblockio.cn"
+    }
+  ]
+}

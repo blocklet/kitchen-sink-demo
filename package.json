@@ -1,0 +1,69 @@
+{
+  "name": "kitchen-sink-blocklet",
+  "title": "Kitchen Sink",
+  "publishConfig": {
+    "access": "public",
+    "directory": "_blocklet/"
+  },
+  "version": "1.0.21",
+  "description": "Demo blocklet that showing how blocklet works in ABT node",
+  "files": [
+    "app/",
+    "screenshots",
+    "blocklet.js",
+    "blocklet.md",
+    "blocklet.json",
+    "logo.png",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ArcBlock/abt-node/tree/master/blocklets/blocklet-hooks-demo"
+  },
+  "blocklet": {
+    "group": "dapp",
+    "color": "primary",
+    "main": "app/index.js",
+    "logo": "logo.png",
+    "provider": "arcblock",
+    "admin_url": "/admin",
+    "config_url": "/config",
+    "public_url": "/",
+    "doc_url": "",
+    "hooks": {
+      "pre-deploy": "npm run build",
+      "post-install": "node app/hooks/post-install.js",
+      "pre-stop": "node app/hooks/pre-stop.js",
+      "pre-install": "node app/hooks/pre-install.js",
+      "pre-start": "node app/hooks/pre-start.js",
+      "pre-uninstall": "node app/hooks/pre-uninstall.js"
+    },
+    "hookFiles": [
+      "app/hooks/post-install.js",
+      "app/hooks/pre-stop.js",
+      "app/hooks/pre-install.js",
+      "app/hooks/pre-start.js",
+      "app/hooks/pre-uninstall.js"
+    ]
+  },
+  "scripts": {
+    "lint": "eslint app",
+    "lint:fix": "eslint --fix app",
+    "precommit": "CI=1 npm run lint",
+    "prepublishOnly": "npm run build",
+    "build": "DEBUG=@abtnode/* NODE_ENV=production abtnode bundle -w app/webpack.blocklet.js",
+    "prepush": "CI=1 npm run lint"
+  },
+  "keywords": [
+    "dapp",
+    "demo"
+  ],
+  "author": "polunzh <polunzh@gmail.com> (http://github.com/polunzh)",
+  "license": "MIT",
+  "dependencies": {
+    "@abtnode/passport": "^1.0.21",
+    "@abtnode/util": "^1.0.21",
+    "express": "^4.17.1"
+  },
+  "gitHead": "e5764f753181ed6a7c615cd4fc6682aacf0cb7cd"
+}
