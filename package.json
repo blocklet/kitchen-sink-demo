@@ -20,32 +20,6 @@
     "type": "git",
     "url": "https://github.com/ArcBlock/abt-node/tree/master/blocklets/blocklet-hooks-demo"
   },
-  "blocklet": {
-    "group": "dapp",
-    "color": "primary",
-    "main": "app/index.js",
-    "logo": "logo.png",
-    "provider": "arcblock",
-    "admin_url": "/admin",
-    "config_url": "/config",
-    "public_url": "/",
-    "doc_url": "",
-    "hooks": {
-      "pre-deploy": "npm run build",
-      "post-install": "node app/hooks/post-install.js",
-      "pre-stop": "node app/hooks/pre-stop.js",
-      "pre-install": "node app/hooks/pre-install.js",
-      "pre-start": "node app/hooks/pre-start.js",
-      "pre-uninstall": "node app/hooks/pre-uninstall.js"
-    },
-    "hookFiles": [
-      "app/hooks/post-install.js",
-      "app/hooks/pre-stop.js",
-      "app/hooks/pre-install.js",
-      "app/hooks/pre-start.js",
-      "app/hooks/pre-uninstall.js"
-    ]
-  },
   "scripts": {
     "lint": "eslint app",
     "lint:fix": "eslint --fix app",
