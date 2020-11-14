@@ -2,13 +2,11 @@
   "name": "kitchen-sink-blocklet",
   "title": "Kitchen Sink",
   "publishConfig": {
-    "access": "public",
-    "directory": "_blocklet/"
+    "access": "public"
   },
   "version": "1.0.21",
   "description": "Demo blocklet that showing how blocklet works in ABT node",
   "files": [
-    "app/",
     "screenshots",
     "blocklet.js",
     "blocklet.md",
@@ -21,12 +19,13 @@
     "url": "https://github.com/ArcBlock/abt-node/tree/master/blocklets/blocklet-hooks-demo"
   },
   "scripts": {
+    "bump": "abtnode blocklet:version",
     "lint": "eslint app",
     "lint:fix": "eslint --fix app",
     "precommit": "CI=1 npm run lint",
-    "prepublishOnly": "npm run build",
-    "build": "DEBUG=@abtnode/* NODE_ENV=production abtnode bundle -w app/webpack.blocklet.js",
-    "prepush": "CI=1 npm run lint"
+    "prepush": "CI=1 npm run lint",
+    "bundle": "abtnode bundle --zip",
+    "deploy": "npm run bundle && abtnode deploy .blocklet/bundle"
   },
   "keywords": [
     "dapp",
@@ -35,8 +34,8 @@
   "author": "polunzh <polunzh@gmail.com> (http://github.com/polunzh)",
   "license": "MIT",
   "dependencies": {
-    "@abtnode/passport": "^1.0.21",
-    "@abtnode/util": "^1.0.21",
+    "@abtnode/passport": "^1.0.32",
+    "@abtnode/util": "^1.0.32",
     "express": "^4.17.1"
   },
   "gitHead": "e5764f753181ed6a7c615cd4fc6682aacf0cb7cd"

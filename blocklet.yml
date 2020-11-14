@@ -19,7 +19,6 @@ repository:
   url: >-
     https://github.com/ArcBlock/abt-node/tree/master/blocklets/blocklet-hooks-demo
 hooks:
-  pre-deploy: npm run build
   post-install: node app/hooks/post-install.js
   pre-stop: node app/hooks/pre-stop.js
   pre-install: node app/hooks/pre-install.js

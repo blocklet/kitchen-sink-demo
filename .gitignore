@@ -12,7 +12,7 @@ build/
 *.dump
 demo.js
 exec-child.js
-_blocklet/
+.blocklet/
 *.log
 coverage
 _test
