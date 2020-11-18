@@ -7,10 +7,9 @@
   "version": "1.0.21",
   "description": "Demo blocklet that showing how blocklet works in ABT node",
   "files": [
-    "screenshots",
     "blocklet.js",
+    "blocklet.zip",
     "blocklet.md",
-    "blocklet.json",
     "logo.png",
     "README.md"
   ],
@@ -19,12 +18,13 @@
     "url": "https://github.com/ArcBlock/abt-node/tree/master/blocklets/blocklet-hooks-demo"
   },
   "scripts": {
+    "clean": "rm -rf .blocklet",
     "bump": "abtnode blocklet:version",
     "lint": "eslint app",
     "lint:fix": "eslint --fix app",
     "precommit": "CI=1 npm run lint",
     "prepush": "CI=1 npm run lint",
-    "bundle": "abtnode bundle --zip",
+    "bundle": "npm run clean && abtnode bundle --zip",
     "deploy": "npm run bundle && abtnode deploy .blocklet/bundle"
   },
   "keywords": [
