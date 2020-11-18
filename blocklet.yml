@@ -1,7 +1,7 @@
 name: kitchen-sink-blocklet
 description: Demo blocklet that showing how blocklet works in ABT node
 group: dapp
-version: 1.0.22
+version: 1.0.23
 main: app/index.js
 title: Kitchen Sink
 publicUrl: /
