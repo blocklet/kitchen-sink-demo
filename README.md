@@ -1,5 +1,9 @@
 # Kitchen Sink Demo
 
+## Install on my ABT Node
+
+[![Install on my ABT Node](https://raw.githubusercontent.com/blocklet/development-guide/main/assets/install_on_abtnode.svg)](https://install.arcblock.io/?action=blocklet-install&meta_url=https%3A%2F%2Fgithub.com%2Fblocklet%2Fkitchen-sink-demo%2Freleases%2Fdownload%2F1.0.23%2Fblocklet.json)
+
 ## What's Included?
 
 Demo blocklet that showing how to define a blocklet:
