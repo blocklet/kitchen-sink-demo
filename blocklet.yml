@@ -1,31 +1,40 @@
 name: kitchen-sink-blocklet
-description: Demo blocklet that showing how blocklet works in ABT node
-group: dapp
-version: 1.0.23
-main: app/index.js
 title: Kitchen Sink
+version: 1.0.24
+description: Demo blocklet that showing how blocklet works in ABT node
+files:
+  - blocklet.js
+  - blocklet.zip
+  - blocklet.md
+  - logo.png
+  - README.md
+repository:
+  type: git
+  url: >-
+    https://github.com/ArcBlock/abt-node/tree/master/blocklets/blocklet-hooks-demo
+keywords:
+  - dapp
+  - demo
+author:
+  name: polunzh
+  email: polunzh@gmail.com
+  url: 'http://github.com/polunzh'
+license: MIT
+group: dapp
+main: app/index.js
 publicUrl: /
 adminUrl: /admin
 configUrl: /config
 docUrl: ''
 logo: logo.png
-author: 'polunzh <polunzh@gmail.com> (http://github.com/polunzh)'
 charging:
   price: 0
-color: primary
-keywords:
-  - dapp
-  - demo
-repository:
-  type: git
-  url: >-
-    https://github.com/ArcBlock/abt-node/tree/master/blocklets/blocklet-hooks-demo
 hooks:
-  post-install: node app/hooks/post-install.js
-  pre-stop: node app/hooks/pre-stop.js
-  pre-install: node app/hooks/pre-install.js
-  pre-start: node app/hooks/pre-start.js
-  pre-uninstall: node app/hooks/pre-uninstall.js
+  preInstall: node app/hooks/pre-install.js
+  postInstall: node app/hooks/post-install.js
+  preStart: node app/hooks/pre-start.js
+  preStop: node app/hooks/pre-stop.js
+  preUninstall: node app/hooks/pre-uninstall.js
 hookFiles:
   - app/hooks/post-install.js
   - app/hooks/pre-stop.js
@@ -37,7 +46,13 @@ environments:
     description: Custom forge release mirror
     required: false
     default: 'https://releases.arcblockio.cn'
+    secure: false
 capabilities:
   dynamicPathPrefix: true
 specVersion: 1.0.0
 did: z8ia22AX1PovjTi1YQw8ChgsbeVExYsX4dPFt
+community: ''
+documentation: ''
+homepage: ''
+interfaces: []
+screenshots: []
