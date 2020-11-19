@@ -39,17 +39,14 @@ documentation: ''
 homepage: ''
 interfaces:
   - type: gui
-    name: public_url
+    name: publicUrl
     path: /
-    prefix: '*'
   - type: gui
-    name: admin_url
+    name: adminUrl
     path: /admin
-    prefix: '*'
   - type: gui
-    name: config_url
+    name: configUrl
     path: /config
-    prefix: '*'
 screenshots: []
 scripts:
   preInstall: node app/hooks/pre-install.js
