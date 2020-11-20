@@ -24,8 +24,8 @@
     "lint:fix": "eslint --fix app",
     "precommit": "CI=1 npm run lint",
     "prepush": "CI=1 npm run lint",
-    "bundle": "npm run clean && an bundle --zip --create-release",
-    "deploy": "npm run bundle && an deploy .blocklet/bundle"
+    "bundle": "npm run clean && abtnode bundle --zip --create-release",
+    "deploy": "npm run bundle && abtnode deploy .blocklet/bundle"
   },
   "keywords": [
     "dapp",
