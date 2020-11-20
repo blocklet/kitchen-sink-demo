@@ -14,7 +14,7 @@ files:
 repository:
   type: git
   url: >-
-    https://github.com/ArcBlock/abt-node/tree/master/blocklets/blocklet-hooks-demo
+    https://github.com/blocklet/kitchen-sink-demo
 keywords:
   - dapp
   - demo
