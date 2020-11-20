@@ -38,13 +38,13 @@ community: ''
 documentation: ''
 homepage: ''
 interfaces:
-  - type: gui
+  - type: web
     name: publicUrl
     path: /
-  - type: gui
+  - type: web
     name: adminUrl
     path: /admin
-  - type: gui
+  - type: web
     name: configUrl
     path: /config
 screenshots: []
