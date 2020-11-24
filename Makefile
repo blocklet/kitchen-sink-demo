@@ -7,3 +7,6 @@ test:
 
 build:
 	@echo "Building the software..."
+
+bundle
+	@npm run bundle
