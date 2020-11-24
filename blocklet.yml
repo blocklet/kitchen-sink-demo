@@ -1,6 +1,6 @@
 name: kitchen-sink-blocklet
 title: Kitchen Sink
-version: 1.0.23
+version: 1.0.25
 description: Demo blocklet that showing how blocklet works in ABT node
 files:
   - blocklet.md
@@ -13,8 +13,7 @@ files:
   - app/hooks/pre-uninstall.js
 repository:
   type: git
-  url: >-
-    https://github.com/blocklet/kitchen-sink-demo
+  url: 'git+https://github.com/blocklet/kitchen-sink-demo.git'
 keywords:
   - dapp
   - demo
@@ -41,12 +40,21 @@ interfaces:
   - type: web
     name: publicUrl
     path: /
+    prefix: '*'
+    protocol: tcp
+    port: BLOCKLET_PORT
   - type: web
     name: adminUrl
     path: /admin
+    prefix: '*'
+    protocol: tcp
+    port: BLOCKLET_PORT
   - type: web
     name: configUrl
     path: /config
+    prefix: '*'
+    protocol: tcp
+    port: BLOCKLET_PORT
 screenshots: []
 scripts:
   preInstall: node app/hooks/pre-install.js
@@ -54,3 +62,7 @@ scripts:
   preStart: node app/hooks/pre-start.js
   preStop: node app/hooks/pre-stop.js
   preUninstall: node app/hooks/pre-uninstall.js
+timeout:
+  start: 10
+capabilities:
+  dynamicPathPrefix: true
