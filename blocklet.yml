@@ -1,17 +1,20 @@
 name: kitchen-sink-blocklet
 title: Kitchen Sink
-version: 1.0.24
+version: 1.0.23
 description: Demo blocklet that showing how blocklet works in ABT node
 files:
-  - blocklet.js
-  - blocklet.zip
   - blocklet.md
   - logo.png
   - README.md
+  - app/hooks/post-install.js
+  - app/hooks/pre-stop.js
+  - app/hooks/pre-install.js
+  - app/hooks/pre-start.js
+  - app/hooks/pre-uninstall.js
 repository:
   type: git
   url: >-
-    https://github.com/ArcBlock/abt-node/tree/master/blocklets/blocklet-hooks-demo
+    https://github.com/blocklet/kitchen-sink-demo
 keywords:
   - dapp
   - demo
@@ -22,37 +25,32 @@ author:
 license: MIT
 group: dapp
 main: app/index.js
-publicUrl: /
-adminUrl: /admin
-configUrl: /config
-docUrl: ''
 logo: logo.png
-charging:
-  price: 0
-hooks:
-  preInstall: node app/hooks/pre-install.js
-  postInstall: node app/hooks/post-install.js
-  preStart: node app/hooks/pre-start.js
-  preStop: node app/hooks/pre-stop.js
-  preUninstall: node app/hooks/pre-uninstall.js
-hookFiles:
-  - app/hooks/post-install.js
-  - app/hooks/pre-stop.js
-  - app/hooks/pre-install.js
-  - app/hooks/pre-start.js
-  - app/hooks/pre-uninstall.js
 environments:
   - name: FORGE_RELEASE_MIRROR
     description: Custom forge release mirror
     required: false
     default: 'https://releases.arcblockio.cn'
     secure: false
-capabilities:
-  dynamicPathPrefix: true
-specVersion: 1.0.0
+specVersion: 1.0.1
 did: z8ia22AX1PovjTi1YQw8ChgsbeVExYsX4dPFt
 community: ''
 documentation: ''
 homepage: ''
-interfaces: []
+interfaces:
+  - type: web
+    name: publicUrl
+    path: /
+  - type: web
+    name: adminUrl
+    path: /admin
+  - type: web
+    name: configUrl
+    path: /config
 screenshots: []
+scripts:
+  preInstall: node app/hooks/pre-install.js
+  postInstall: node app/hooks/post-install.js
+  preStart: node app/hooks/pre-start.js
+  preStop: node app/hooks/pre-stop.js
+  preUninstall: node app/hooks/pre-uninstall.js

@@ -15,7 +15,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/ArcBlock/abt-node/tree/master/blocklets/blocklet-hooks-demo"
+    "url": "https://github.com/blocklet/kitchen-sink-demo"
   },
   "scripts": {
     "clean": "rm -rf .blocklet",
@@ -24,7 +24,7 @@
     "lint:fix": "eslint --fix app",
     "precommit": "CI=1 npm run lint",
     "prepush": "CI=1 npm run lint",
-    "bundle": "npm run clean && abtnode bundle --zip",
+    "bundle": "npm run clean && abtnode bundle --zip --create-release",
     "deploy": "npm run bundle && abtnode deploy .blocklet/bundle"
   },
   "keywords": [
