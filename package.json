@@ -24,8 +24,8 @@
     "lint:fix": "eslint --fix app",
     "precommit": "CI=1 npm run lint",
     "prepush": "CI=1 npm run lint",
-    "bundle": "npm run clean && abtnode bundle --zip --create-release",
-    "deploy": "npm run bundle && abtnode deploy .blocklet/bundle"
+    "bundle": "npm run clean && an bundle --zip --create-release",
+    "deploy": "npm run bundle && an deploy .blocklet/bundle"
   },
   "keywords": [
     "dapp",
@@ -36,6 +36,8 @@
   "dependencies": {
     "@abtnode/passport": "^1.0.32",
     "@abtnode/util": "^1.0.32",
+    "axon": "^2.0.3",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1"
   },
   "gitHead": "e5764f753181ed6a7c615cd4fc6682aacf0cb7cd"

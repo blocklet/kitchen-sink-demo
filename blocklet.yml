@@ -41,20 +41,32 @@ interfaces:
     name: publicUrl
     path: /
     prefix: '*'
-    protocol: tcp
+    protocol: http
     port: BLOCKLET_PORT
   - type: web
     name: adminUrl
     path: /admin
     prefix: '*'
-    protocol: tcp
+    protocol: http
     port: BLOCKLET_PORT
   - type: web
     name: configUrl
     path: /config
     prefix: '*'
-    protocol: tcp
+    protocol: http
     port: BLOCKLET_PORT
+  - type: web
+    name: API
+    path: /api
+    prefix: '*'
+    protocol: http
+    port: BLOCKLET_API_PORT
+  - type: service
+    name: Echo
+    protocol: tcp
+    port:
+      internal: BLOCKLET_ECHO_PORT
+      external: 8888
 screenshots: []
 scripts:
   preInstall: node app/hooks/pre-install.js
@@ -64,5 +76,3 @@ scripts:
   preUninstall: node app/hooks/pre-uninstall.js
 timeout:
   start: 10
-capabilities:
-  dynamicPathPrefix: true
