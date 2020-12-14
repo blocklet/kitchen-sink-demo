@@ -4,11 +4,9 @@
   "publishConfig": {
     "access": "public"
   },
-  "version": "1.0.25",
+  "version": "1.1.0",
   "description": "Demo blocklet that showing how blocklet works in ABT node",
   "files": [
-    "blocklet.js",
-    "blocklet.zip",
     "blocklet.md",
     "logo.png",
     "README.md"
@@ -24,8 +22,8 @@
     "lint:fix": "eslint --fix app",
     "precommit": "CI=1 npm run lint",
     "prepush": "CI=1 npm run lint",
-    "bundle": "npm run clean && an bundle --zip --create-release",
-    "deploy": "npm run bundle && an deploy .blocklet/bundle"
+    "bundle": "npm run clean && abtnode bundle --zip --create-release",
+    "deploy": "npm run bundle && abtnode deploy .blocklet/bundle"
   },
   "keywords": [
     "dapp",
