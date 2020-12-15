@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 /* eslint-disable no-underscore-dangle */
 const express = require('express');
 const passport = require('@abtnode/passport');
@@ -41,7 +43,11 @@ app.get('/', (req, res) => {
   }
 });
 
-app.listen(process.env.BLOCKLET_PORT || 3030, () => {
+const port = Number(process.env.BLOCKLET_PORT || 3030);
+app.listen(port, () => {
   // eslint-disable-next-line no-console
-  console.log(`Blocklet ready at ${process.env.BLOCKLET_PORT}`);
+  console.log(`Blocklet ready at ${port}`);
 });
+
+require('./echo');
+require('./api');
