@@ -31,7 +31,7 @@ jobs:
           GIT_HUB_TOKEN: ${{ secrets.GIT_HUB_TOKEN }}
         run: bash ./tools/publish.sh
 
-    - name: Release to Github
-      uses: blocklet/action-release-to-github@v1.0.0
-      with:
-        token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Release to Github
+        uses: blocklet/action-release-to-github@v1.0.0
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
