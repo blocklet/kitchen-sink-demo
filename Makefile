@@ -35,7 +35,7 @@ lint:
 doc:
 	@echo "Building the documenation..."
 
-precommit: dep lint doc build test
+precommit: dep doc build test
 
 github-action-init: precommit
 	@sudo npm install -g yarn @abtnode/cli
