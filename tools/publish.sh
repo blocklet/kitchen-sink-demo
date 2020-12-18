@@ -10,7 +10,7 @@ echo "publishing to npm..."
 make release
 npm config set '//registry.npmjs.org/:_authToken' "${NPM_TOKEN}"
 echo "SKIP_PREFLIGHT_CHECK=true" > ./.env
-npm run build && rm -f .blocklet/bundle/build/**/**/*.{js,css}.map
+npm run bundle
 npm publish .blocklet/bundle
 
 # deploy to remote ABT Node
