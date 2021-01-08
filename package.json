@@ -17,13 +17,13 @@
   },
   "scripts": {
     "clean": "rm -rf .blocklet",
-    "bump": "abtnode blocklet:version",
+    "bump": "blocklet version",
     "lint": "eslint app",
     "lint:fix": "eslint --fix app",
     "precommit": "CI=1 npm run lint",
     "prepush": "CI=1 npm run lint",
-    "bundle": "npm run clean && abtnode bundle --zip --create-release",
-    "deploy": "npm run bundle && abtnode deploy .blocklet/bundle"
+    "bundle": "npm run clean && blocklet bundle --zip --create-release",
+    "deploy": "npm run bundle && blocklet deploy .blocklet/bundle"
   },
   "keywords": [
     "dapp",
