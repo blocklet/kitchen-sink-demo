@@ -17,13 +17,13 @@
   },
   "scripts": {
     "clean": "rm -rf .blocklet",
-    "bump": "abtnode blocklet:version",
+    "bump": "blocklet version",
     "lint": "eslint app",
     "lint:fix": "eslint --fix app",
     "precommit": "CI=1 npm run lint",
     "prepush": "CI=1 npm run lint",
-    "bundle": "npm run clean && abtnode bundle --zip --create-release",
-    "deploy": "npm run bundle && abtnode deploy .blocklet/bundle"
+    "bundle": "npm run clean && blocklet bundle --zip --create-release",
+    "deploy": "npm run bundle && blocklet deploy .blocklet/bundle"
   },
   "keywords": [
     "dapp",
@@ -32,8 +32,8 @@
   "author": "polunzh <polunzh@gmail.com> (http://github.com/polunzh)",
   "license": "MIT",
   "dependencies": {
-    "@abtnode/passport": "^1.0.32",
-    "@abtnode/util": "^1.0.32",
+    "@abtnode/passport": "1.1.10-beta.1",
+    "@abtnode/util": "^1.1.9",
     "axon": "^2.0.3",
     "dotenv": "^8.2.0",
     "express": "^4.17.1"

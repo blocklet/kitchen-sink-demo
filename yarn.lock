@@ -2,23 +2,22 @@
 # yarn lockfile v1
 
 
-"@abtnode/passport@^1.0.32":
-  version "1.0.32"
-  resolved "https://registry.npm.taobao.org/@abtnode/passport/download/@abtnode/passport-1.0.32.tgz#50c2760545c8730925c53a0b5e9435e11362aaac"
-  integrity sha1-UMJ2BUXIcwklxToLXpQ14RNiqqw=
+"@abtnode/passport@1.1.10-beta.1":
+  version "1.1.10-beta.1"
+  resolved "https://registry.yarnpkg.com/@abtnode/passport/-/passport-1.1.10-beta.1.tgz#b00ccbfc011ca88d6bad38b7dbaf69b4deaaf384"
+  integrity sha512-qMyuj5SGYa6GHM9A+Zco+BJCBt3qt30vpAYNFlVLrtomQ43R5oW3M/dKQXNOvbexWyhKxX3/i8iwZc4ieNAUoA==
   dependencies:
-    "@arcblock/forge-util" "^1.4.2"
-    "@arcblock/forge-wallet" "^1.4.2"
-    "@arcblock/mcrypto" "^1.4.2"
-    axios "^0.21.0"
+    "@arcblock/forge-util" "^1.5.5"
+    "@arcblock/forge-wallet" "^1.5.5"
+    "@arcblock/mcrypto" "^1.5.5"
+    axios "^0.21.1"
     lodash "^4.17.11"
 
-"@abtnode/util@^1.0.32":
-  version "1.0.32"
-  resolved "https://registry.npm.taobao.org/@abtnode/util/download/@abtnode/util-1.0.32.tgz#6daec05515df64b6ab20eb0d4f501f5645f198fd"
-  integrity sha1-ba7AVRXfZLarIOsNT1AfVkXxmP0=
+"@abtnode/util@^1.1.9":
+  version "1.1.9"
+  resolved "https://registry.yarnpkg.com/@abtnode/util/-/util-1.1.9.tgz#19dbbe30a122640e62a14f9d9c6f57253c42d4fa"
+  integrity sha512-yMPuiuC0A0/jvC2AUh61jC1HeUZ/dnkIjK7iZ2xCph+KwmEvvJhDYGPa4Abuq+6C/5fXJzPk0myXM9Z3RYdzSQ==
   dependencies:
-    "@arcblock/did" "^1.4.2"
     axios "^0.21.0"
     debug "^4.2.0"
     flush-write-stream "^2.0.0"
@@ -26,7 +25,6 @@
     hasha "^5.2.0"
     internal-ip "^6.1.0"
     is-docker "^2.1.1"
-    js-yaml "^3.14.0"
     lodash "^4.17.15"
     parallel-transform "^1.2.0"
     public-ip "^4.0.2"
@@ -36,23 +34,23 @@
     stream-to-promise "^3.0.0"
     through2-filter "^3.0.0"
     through2-map "^3.0.0"
-    to-semver "^2.0.0"
+    to-semver "^3.0.0"
 
-"@arcblock/did@^1.4.2":
-  version "1.4.2"
-  resolved "https://registry.yarnpkg.com/@arcblock/did/-/did-1.4.2.tgz#bae1b4084da6986dca32659ba599880676f6740e"
-  integrity sha512-YWxVytWJ5LNQa8+OLiODWfOeeJBIjAGIKc60Z7XqqraB5cr4erIlXVrWKdke/kIO+UIm/hqTZ+wxkNtZ3Uw66A==
+"@arcblock/did@^1.5.5":
+  version "1.5.5"
+  resolved "https://registry.yarnpkg.com/@arcblock/did/-/did-1.5.5.tgz#ad97a6f2cf1607a2ed40e1d6e39cb51183b68e85"
+  integrity sha512-Eujfn2GmDsYh88DsZJRZgQgLlaVsuLT5YfEHQqUMZmVk8NwN1ggSGjEm5esCuTCClMPMz6rxy9M8vvFBqqzYDg==
   dependencies:
-    "@arcblock/forge-util" "^1.4.2"
-    "@arcblock/mcrypto" "^1.4.2"
+    "@arcblock/forge-util" "^1.5.5"
+    "@arcblock/mcrypto" "^1.5.5"
     bn.js "^5.0.0"
-    debug "^4.1.1"
+    debug "^4.3.1"
     lodash "^4.17.14"
 
-"@arcblock/forge-util@^1.4.2":
-  version "1.4.2"
-  resolved "https://registry.yarnpkg.com/@arcblock/forge-util/-/forge-util-1.4.2.tgz#051f2ef6a0f2848c8009a3c93ca16942934a0d95"
-  integrity sha512-vN8zNYsCvto72OA9sc70XMfrf2Mg0BbXhLfVSspp2N75Ta7aoyRuNrnwkVw8vqTeR6npMfTyoMvGIBKjmJZj1A==
+"@arcblock/forge-util@^1.5.5":
+  version "1.5.5"
+  resolved "https://registry.yarnpkg.com/@arcblock/forge-util/-/forge-util-1.5.5.tgz#ed1b8356492e6089621a77afafff84211ad78e15"
+  integrity sha512-t+DXU0oywPSjYxDaDrZHwy39Bi9yHaoI3BA1CwHGrVEPCXIiXg6Pxkvwmc3aK3bc1nxDQW7lDwS/FKV6WPwjgA==
   dependencies:
     base64-url "^2.3.2"
     bn.js "4.11.6"
@@ -61,21 +59,21 @@
     number-to-bn "^1.7.0"
     utf8 "^3.0.0"
 
-"@arcblock/forge-wallet@^1.4.2":
-  version "1.4.2"
-  resolved "https://registry.yarnpkg.com/@arcblock/forge-wallet/-/forge-wallet-1.4.2.tgz#dc77ce51a47e4bd10503c6af5d2b2ff5854e4a00"
-  integrity sha512-J7XA/H0zmQf5OZcIlA7+0Lw0/28Wq6CJG1BcoNp5XJAcSwmDXd9OwJlogqsCLjeKVS0tcbAYX0/q2rqvULR0FQ==
+"@arcblock/forge-wallet@^1.5.5":
+  version "1.5.5"
+  resolved "https://registry.yarnpkg.com/@arcblock/forge-wallet/-/forge-wallet-1.5.5.tgz#eec85f21eff3f4dbd51902b65df4d18cab0bc719"
+  integrity sha512-UV/jHaeDG24QDTdOu6oiTnkQVuHxTNqddD1fZoEPgzJOcREphwj1GgWqIxZBzWbi+82/a2tkOVAwsITpR2owzQ==
   dependencies:
-    "@arcblock/did" "^1.4.2"
-    "@arcblock/mcrypto" "^1.4.2"
+    "@arcblock/did" "^1.5.5"
+    "@arcblock/mcrypto" "^1.5.5"
     lodash.upperfirst "^4.3.1"
 
-"@arcblock/mcrypto@^1.4.2":
-  version "1.4.2"
-  resolved "https://registry.yarnpkg.com/@arcblock/mcrypto/-/mcrypto-1.4.2.tgz#f447d76ab1133006ad946fe3ce2ac2f7530ee289"
-  integrity sha512-qIvS6pVQ8pw76/mOduZ2aOSrQ7KsfPPne18anSn80uyL6Wg11eWZSvUtcWMqj8y8KqzqUm7BitJOcO9HwGIOiA==
+"@arcblock/mcrypto@^1.5.5":
+  version "1.5.5"
+  resolved "https://registry.yarnpkg.com/@arcblock/mcrypto/-/mcrypto-1.5.5.tgz#0d359f2d8da1a727685feeb1c41eed2f6692eefd"
+  integrity sha512-CoU95Q7Mo3d0y+9/WCWozoM+WEBjAlstHbRtaUH5JLE51iYG2Wd29ZmLq/I86+6cjgTYvAQk463Z0ZibZVfAow==
   dependencies:
-    "@arcblock/forge-util" "^1.4.2"
+    "@arcblock/forge-util" "^1.5.5"
     bn.js "4.11.8"
     crypto-js "^3.1.9-1"
     elliptic "^6.4.1"
@@ -122,13 +120,6 @@ any-promise@^1.1.0, any-promise@~1.3.0:
   resolved "https://registry.npm.taobao.org/any-promise/download/any-promise-1.3.0.tgz#abc6afeedcea52e809cdc0376aed3ce39635d17f"
   integrity sha1-q8av7tzqUugJzcA3au0845Y10X8=
 
-argparse@^1.0.7:
-  version "1.0.10"
-  resolved "https://registry.npm.taobao.org/argparse/download/argparse-1.0.10.tgz#bcd6791ea5ae09725e17e5ad988134cd40b3d911"
-  integrity sha1-vNZ5HqWuCXJeF+WtmIE0zUCz2RE=
-  dependencies:
-    sprintf-js "~1.0.2"
-
 array-flatten@1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/array-flatten/-/array-flatten-1.1.1.tgz#9a5f699051b1e7073328f2a008968b64ea2955d2"
@@ -138,6 +129,13 @@ axios@^0.21.0:
   version "0.21.0"
   resolved "https://registry.npm.taobao.org/axios/download/axios-0.21.0.tgz#26df088803a2350dff2c27f96fef99fe49442aca"
   integrity sha1-Jt8IiAOiNQ3/LCf5b++Z/klEKso=
+  dependencies:
+    follow-redirects "^1.10.0"
+
+axios@^0.21.1:
+  version "0.21.1"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-0.21.1.tgz#22563481962f4d6bde9a76d516ef0e5d3c09b2b8"
+  integrity sha512-dKQiRHxGD9PPRIUNIWvZhPTPpl1rf/OxTYKsqKUDjBwYylTvV7SjSHJb9ratfyzM6wCdLCOYLzs73qpg5c4iGA==
   dependencies:
     follow-redirects "^1.10.0"
 
@@ -249,6 +247,13 @@ cacheable-request@^6.0.0:
     normalize-url "^4.1.0"
     responselike "^1.0.2"
 
+clean-semver@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/clean-semver/-/clean-semver-2.1.0.tgz#05ee0f85a5f6d2a83b058ea2d23722becff63996"
+  integrity sha512-a5sIRLwP078fc3/AEDfSxD8GmMBJlxYCUnRfXjldyy9RjwXxNVuK9hLwDar4sceJhZp6G+66ukNZsVFIqN28jg==
+  dependencies:
+    semver "^7.3.2"
+
 clone-response@^1.0.2:
   version "1.0.2"
   resolved "https://registry.npm.taobao.org/clone-response/download/clone-response-1.0.2.tgz#d1dc973920314df67fbeb94223b4ee350239e96b"
@@ -312,7 +317,7 @@ cyclist@^1.0.1:
   resolved "https://registry.yarnpkg.com/cyclist/-/cyclist-1.0.1.tgz#596e9698fd0c80e12038c2b82d6eb1b35b6224d9"
   integrity sha1-WW6WmP0MgOEgOMK4LW6xs1tiJNk=
 
-debug@*:
+debug@*, debug@^4.3.1:
   version "4.3.1"
   resolved "https://registry.yarnpkg.com/debug/-/debug-4.3.1.tgz#f0d229c505e0c6d8c49ac553d1b13dc183f6b2ee"
   integrity sha512-doEwdvm4PCeK4K3RQN2ZC2BYUBaxwLARCqZmMjtF8a51J2Rb0xpVloFRnCODwqjpwnAoao4pelN8l3RJdv3gRQ==
@@ -326,7 +331,7 @@ debug@2.6.9:
   dependencies:
     ms "2.0.0"
 
-debug@^4.1.1, debug@^4.2.0:
+debug@^4.2.0:
   version "4.2.0"
   resolved "https://registry.yarnpkg.com/debug/-/debug-4.2.0.tgz#7f150f93920e94c58f5574c2fd01a3110effe7f1"
   integrity sha512-IX2ncY78vDTjZMFUdmsvIRFY2Cf4FnD0wRs+nQwJU8Lu99/tPFdb0VybiiMTPe3I6rQmwsqQqRBvxU+bZ/I8sg==
@@ -425,11 +430,6 @@ escape-regexp@0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/escape-regexp/-/escape-regexp-0.0.1.tgz#f44bda12d45bbdf9cb7f862ee7e4827b3dd32254"
   integrity sha1-9EvaEtRbvfnLf4Yu5+SCez3TIlQ=
-
-esprima@^4.0.0:
-  version "4.0.1"
-  resolved "https://registry.npm.taobao.org/esprima/download/esprima-4.0.1.tgz#13b04cdb3e6c5d19df91ab6987a8695619b0aa71"
-  integrity sha1-E7BM2z5sXRnfkatph6hpVhmwqnE=
 
 etag@~1.8.1:
   version "1.8.1"
@@ -762,14 +762,6 @@ js-sha3@^0.8.0:
   resolved "https://registry.yarnpkg.com/js-sha3/-/js-sha3-0.8.0.tgz#b9b7a5da73afad7dedd0f8c463954cbde6818840"
   integrity sha512-gF1cRrHhIzNfToc802P800N8PpXS+evLLXfsVpowqmAFR9uwbi89WvXg2QspOmXL8QL86J4T1EpFu+yUkwJY3Q==
 
-js-yaml@^3.14.0:
-  version "3.14.0"
-  resolved "https://registry.npm.taobao.org/js-yaml/download/js-yaml-3.14.0.tgz#a7a34170f26a21bb162424d8adacb4113a69e482"
-  integrity sha1-p6NBcPJqIbsWJCTYray0ETpp5II=
-  dependencies:
-    argparse "^1.0.7"
-    esprima "^4.0.0"
-
 json-buffer@3.0.0:
   version "3.0.0"
   resolved "https://registry.npm.taobao.org/json-buffer/download/json-buffer-3.0.0.tgz#5b1f397afc75d677bde8bcfc0e47e1f9a3d9a898"
@@ -801,6 +793,13 @@ lowercase-keys@^2.0.0:
   version "2.0.0"
   resolved "https://registry.npm.taobao.org/lowercase-keys/download/lowercase-keys-2.0.0.tgz#2603e78b7b4b0006cbca2fbcc8a3202558ac9479"
   integrity sha1-JgPni3tLAAbLyi+8yKMgJVislHk=
+
+lru-cache@^6.0.0:
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-6.0.0.tgz#6d6fe6570ebd96aaf90fcad1dafa3b2566db3a94"
+  integrity sha512-Jo6dJ04CmSjuznwJSS3pUeWmd/H0ffTlkXXgwZi+eq1UCmqQwCh+eLsYOYCwY991i2Fah4h1BEMCx4qThGbsiA==
+  dependencies:
+    yallist "^4.0.0"
 
 media-typer@0.3.0:
   version "0.3.0"
@@ -1113,10 +1112,12 @@ semver@^5.0.3:
   resolved "https://registry.npm.taobao.org/semver/download/semver-5.7.1.tgz#a954f931aeba508d307bbf069eff0c01c96116f7"
   integrity sha1-qVT5Ma66UI0we78Gnv8MAclhFvc=
 
-semver@^6.0.0:
-  version "6.3.0"
-  resolved "https://registry.npm.taobao.org/semver/download/semver-6.3.0.tgz#ee0a64c8af5e8ceea67687b133761e1becbd1d3d"
-  integrity sha1-7gpkyK9ejO6mdoexM3YeG+y9HT0=
+semver@^7.3.2:
+  version "7.3.4"
+  resolved "https://registry.yarnpkg.com/semver/-/semver-7.3.4.tgz#27aaa7d2e4ca76452f98d3add093a72c943edc97"
+  integrity sha512-tCfb2WLjqFAtXn4KEdxIhalnRtoKFN7nAwj0B3ZXCbQloV2tq5eDbcTmT68JJD3nRJq24/XgxtQKFIpQdtvmVw==
+  dependencies:
+    lru-cache "^6.0.0"
 
 send@0.17.1:
   version "0.17.1"
@@ -1177,11 +1178,6 @@ signal-exit@^3.0.2:
   version "3.0.3"
   resolved "https://registry.npm.taobao.org/signal-exit/download/signal-exit-3.0.3.tgz#a1410c2edd8f077b08b4e253c8eacfcaf057461c"
   integrity sha1-oUEMLt2PB3sItOJTyOrPyvBXRhw=
-
-sprintf-js@~1.0.2:
-  version "1.0.3"
-  resolved "https://registry.npm.taobao.org/sprintf-js/download/sprintf-js-1.0.3.tgz#04e6926f662895354f3dd015203633b857297e2c"
-  integrity sha1-BOaSb2YolTVPPdAVIDYzuFcpfiw=
 
 "statuses@>= 1.5.0 < 2", statuses@~1.5.0:
   version "1.5.0"
@@ -1259,12 +1255,13 @@ to-readable-stream@^1.0.0:
   resolved "https://registry.npm.taobao.org/to-readable-stream/download/to-readable-stream-1.0.0.tgz#ce0aa0c2f3df6adf852efb404a783e77c0475771"
   integrity sha1-zgqgwvPfat+FLvtASng+d8BHV3E=
 
-to-semver@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.npm.taobao.org/to-semver/download/to-semver-2.0.0.tgz#56eba7579694ff656f526b5c9cb4f62e9776fea8"
-  integrity sha1-VuunV5aU/2VvUmtcnLT2Lpd2/qg=
+to-semver@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/to-semver/-/to-semver-3.0.0.tgz#432c637dd031d526fcacf7afa348193f4da07d78"
+  integrity sha512-/e3TUJVC6EvKYBzwcZh7I6OlJD0hAbpHZcISS8RbVwWm5aPEo8HDK9IkgOtnJO0AOGK8GTDrAQEUgZjFHbuk2w==
   dependencies:
-    semver "^6.0.0"
+    clean-semver "^2.1.0"
+    semver "^7.3.2"
 
 toidentifier@1.0.0:
   version "1.0.0"
@@ -1337,3 +1334,8 @@ xtend@^4.0.0, xtend@~4.0.0, xtend@~4.0.1:
   version "4.0.2"
   resolved "https://registry.yarnpkg.com/xtend/-/xtend-4.0.2.tgz#bb72779f5fa465186b1f438f674fa347fdb5db54"
   integrity sha512-LKYU1iAXJXUgAXn9URjiu+MWhyUXHsvfp7mcuYm9dSUKK0/CjtrUwFAxD82/mCWbtLsGjFIad0wIsod4zrTAEQ==
+
+yallist@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/yallist/-/yallist-4.0.0.tgz#9bb92790d9c0effec63be73519e11a35019a3a72"
+  integrity sha512-3wdGidZyq5PB084XLES5TpOSRA3wjXAlIWMhum2kRcv/41Sn2emQ0dycQW4uZXLejwKvg6EsvbdlVL+FYEct7A==
