@@ -32,8 +32,8 @@
   "author": "polunzh <polunzh@gmail.com> (http://github.com/polunzh)",
   "license": "MIT",
   "dependencies": {
-    "@abtnode/passport": "^1.0.32",
-    "@abtnode/util": "^1.0.32",
+    "@abtnode/passport": "1.1.10-beta.1",
+    "@abtnode/util": "^1.1.9",
     "axon": "^2.0.3",
     "dotenv": "^8.2.0",
     "express": "^4.17.1"
