@@ -1,6 +1,6 @@
 name: kitchen-sink-blocklet
 title: Kitchen Sink
-version: 1.1.0
+version: 1.1.1
 description: Demo blocklet that showing how blocklet works in ABT node
 files:
   - blocklet.md
@@ -67,6 +67,8 @@ interfaces:
     port:
       internal: BLOCKLET_ECHO_PORT
       external: 8888
+    path: /
+    prefix: '*'
 screenshots: []
 scripts:
   preInstall: node app/hooks/pre-install.js
@@ -76,5 +78,3 @@ scripts:
   preUninstall: node app/hooks/pre-uninstall.js
 timeout:
   start: 10
-requirements:
-  abtnode: ">=1.1.10"
