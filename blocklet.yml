@@ -76,5 +76,5 @@ scripts:
   preStart: node app/hooks/pre-start.js
   preStop: node app/hooks/pre-stop.js
   preUninstall: node app/hooks/pre-uninstall.js
-timeout:
-  start: 10
+requirements:
+  abtnode: ">=1.1.10"
