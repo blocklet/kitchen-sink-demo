@@ -1,3 +1,9 @@
+## 1.2.0 (January 21, 2021)
+
+- remove @abtnode/passport
+- adapt abtnode auth service
+- display rquest data in page
+
 ## 1.1.1 (January 08, 2021)
 
 - Merge pull request #3 from blocklet/replace-abtnode-cmd

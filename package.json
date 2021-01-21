@@ -4,7 +4,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "version": "1.1.1",
+  "version": "1.2.0",
   "description": "Demo blocklet that showing how blocklet works in ABT node",
   "files": [
     "blocklet.md",
@@ -32,7 +32,6 @@
   "author": "polunzh <polunzh@gmail.com> (http://github.com/polunzh)",
   "license": "MIT",
   "dependencies": {
-    "@abtnode/passport": "1.1.10-beta.1",
     "@abtnode/util": "^1.1.9",
     "axon": "^2.0.3",
     "dotenv": "^8.2.0",
