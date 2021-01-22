@@ -1,6 +1,6 @@
 name: kitchen-sink-blocklet
 title: Kitchen Sink
-version: 1.1.1
+version: 1.2.0
 description: Demo blocklet that showing how blocklet works in ABT node
 files:
   - blocklet.md
@@ -31,6 +31,11 @@ environments:
     required: false
     default: 'https://releases.arcblockio.cn'
     secure: false
+  - name: ONLY_START_IN_EVEN_MINUTES
+    description: Only start in even minutes
+    required: false
+    default: 'no'
+    secure: false
 specVersion: 1.0.1
 did: z8ia22AX1PovjTi1YQw8ChgsbeVExYsX4dPFt
 community: ''
@@ -49,12 +54,19 @@ interfaces:
     prefix: '*'
     protocol: http
     port: BLOCKLET_PORT
+    services:
+      - name: '@abtnode/auth-service'
+        invitedUserOnly: not-first
   - type: web
     name: configUrl
     path: /config
     prefix: '*'
     protocol: http
     port: BLOCKLET_PORT
+    services:
+      - name: '@abtnode/auth-service'
+        config:
+          invitedUserOnly: not-first
   - type: web
     name: API
     path: /api
@@ -71,10 +83,13 @@ interfaces:
     prefix: '*'
 screenshots: []
 scripts:
+  dev: node app index.js
   preInstall: node app/hooks/pre-install.js
   postInstall: node app/hooks/post-install.js
   preStart: node app/hooks/pre-start.js
   preStop: node app/hooks/pre-stop.js
   preUninstall: node app/hooks/pre-uninstall.js
 requirements:
-  abtnode: ">=1.1.10"
+  abtnode: '>=1.1.10'
+timeout:
+  start: 60
