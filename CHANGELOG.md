@@ -1,3 +1,7 @@
+## 1.2.1 (January 22, 2021)
+
+- fix blocklet.yml
+
 ## 1.2.0 (January 21, 2021)
 
 - remove @abtnode/passport

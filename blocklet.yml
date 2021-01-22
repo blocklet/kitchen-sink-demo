@@ -1,6 +1,6 @@
 name: kitchen-sink-blocklet
 title: Kitchen Sink
-version: 1.2.0
+version: 1.2.1
 description: Demo blocklet that showing how blocklet works in ABT node
 files:
   - blocklet.md
@@ -56,7 +56,8 @@ interfaces:
     port: BLOCKLET_PORT
     services:
       - name: '@abtnode/auth-service'
-        invitedUserOnly: not-first
+        config:
+          invitedUserOnly: not-first
   - type: web
     name: configUrl
     path: /config
