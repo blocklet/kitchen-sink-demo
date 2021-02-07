@@ -1,3 +1,8 @@
+## 1.2.2 (February 07, 2021)
+
+- add preConfig hook
+- update auth service config
+
 ## 1.2.1 (January 22, 2021)
 
 - fix blocklet.yml

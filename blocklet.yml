@@ -1,6 +1,6 @@
 name: kitchen-sink-blocklet
 title: Kitchen Sink
-version: 1.2.1
+version: 1.2.2
 description: Demo blocklet that showing how blocklet works in ABT node
 files:
   - blocklet.md
@@ -11,6 +11,7 @@ files:
   - app/hooks/pre-install.js
   - app/hooks/pre-start.js
   - app/hooks/pre-uninstall.js
+  - app/hooks/pre-config.js
 repository:
   type: git
   url: 'git+https://github.com/blocklet/kitchen-sink-demo.git'
@@ -36,6 +37,11 @@ environments:
     required: false
     default: 'no'
     secure: false
+  - name: ONLY_YES_OR_NO
+    description: To test preConfig. can only be yes or no
+    required: false
+    default: 'no'
+    secure: false
 specVersion: 1.0.1
 did: z8ia22AX1PovjTi1YQw8ChgsbeVExYsX4dPFt
 community: ''
@@ -58,6 +64,8 @@ interfaces:
       - name: '@abtnode/auth-service'
         config:
           invitedUserOnly: not-first
+          blockUnauthenticated: true
+          blockUnauthorized: true
   - type: web
     name: configUrl
     path: /config
