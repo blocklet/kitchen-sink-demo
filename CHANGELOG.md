@@ -1,3 +1,7 @@
+## 1.2.6 (February 10, 2021)
+
+- fix: preConfig hook
+
 ## 1.2.5 (February 10, 2021)
 
 - fix: preConfig hook
