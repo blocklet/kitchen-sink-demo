@@ -1,3 +1,7 @@
+## 1.2.8 (February 26, 2021)
+
+- [skip ci] Update README.md
+
 ## 1.2.7 (February 26, 2021)
 
 - publish to dev registry
