@@ -13,6 +13,10 @@ echo "SKIP_PREFLIGHT_CHECK=true" > ./.env
 npm run bundle
 npm publish .blocklet/bundle
 
+echo "publishing to staging blocklet registry"
+blocklet config registry ${STAGING_REGISTRY}
+blocklet publish --developer-sk ${ABTNODE_DEV_STAGING_SK}
+
 # deploy to remote ABT Node
 # set +e
 # NAME=$(cat package.json | grep name | head -n 1 |  awk '{print $2}' | sed 's/"//g' | sed 's/,//g')

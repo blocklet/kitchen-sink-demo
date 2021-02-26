@@ -1,3 +1,7 @@
+## 1.2.7 (February 26, 2021)
+
+- publish to dev registry
+
 ## 1.2.6 (February 10, 2021)
 
 - fix: preConfig hook
@@ -39,6 +43,3 @@
 - fix: github actions config
 
 ## 1.1.0 (December 14, 2020)
-
-
-
