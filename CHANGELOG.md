@@ -1,3 +1,7 @@
+## 1.2.9 (March 09, 2021)
+
+- [skip ci] Update README.md
+
 ## 1.2.8 (February 26, 2021)
 
 - [skip ci] Update README.md
