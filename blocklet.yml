@@ -1,6 +1,6 @@
 name: kitchen-sink-blocklet
 title: Kitchen Sink
-version: 1.2.9
+version: 1.2.10
 description: Demo blocklet that showing how blocklet works in ABT node
 files:
   - blocklet.md
