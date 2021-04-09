@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kitchen Sink Blocklet</title>
+    <script src="__meta__.js"></script>
+    <style>
+      html {
+        font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Hooray, you blocklet is up and running</h2>
+    <h3>Meta(window.blocklet)</h3>
+    <div id="metaLog" style="white-space: pre"></div>
+    <h3>Api(fetch from ${prefix}/api)</h3>
+    <div id="apiLog" style="white-space: pre"></div>
+    <script>
+      const metaLog = document.getElementById('metaLog')
+      metaLog.appendChild(document.createTextNode(JSON.stringify(window.blocklet, null, 2)))
+
+      fetch(`${window.blocklet.groupPrefix.replace(/\/+$/, '')}/api${window.location.search}`)
+        .then(response => response.json())
+        .then(data => {
+          const apiLog = document.getElementById('apiLog')
+          apiLog.appendChild(document.createTextNode(JSON.stringify(data, null, 2)))
+        });
+    </script>
+  </body>
+</html>

@@ -1,3 +1,7 @@
+## 1.3.0 (April 09, 2021)
+
+- update homepage of publicUrl
+
 ## 1.2.12 (April 02, 2021)
 
 - [skip ci] Update README.md

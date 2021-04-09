@@ -1,4 +1,5 @@
 require('dotenv').config();
+const path = require('path');
 
 /* eslint-disable no-underscore-dangle */
 const express = require('express');
@@ -38,6 +39,10 @@ app.get('/config', (req, res) => {
 });
 
 app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'view/public.html'));
+});
+
+app.get('/api', (req, res) => {
   if (req.locale === 'en') {
     res.sendDebugJson('Hooray, you blocklet is up and running');
   } else {

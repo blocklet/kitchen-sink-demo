@@ -1,6 +1,6 @@
 name: kitchen-sink-blocklet
 title: Kitchen Sink
-version: 1.2.12
+version: 1.3.0
 description: Demo blocklet that showing how blocklet works in ABT node
 files:
   - blocklet.md
@@ -12,6 +12,7 @@ files:
   - app/hooks/pre-start.js
   - app/hooks/pre-uninstall.js
   - app/hooks/pre-config.js
+  - app/view
 repository:
   type: git
   url: 'git+https://github.com/blocklet/kitchen-sink-demo.git'
