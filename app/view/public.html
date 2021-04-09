@@ -21,7 +21,7 @@
       const metaLog = document.getElementById('metaLog')
       metaLog.appendChild(document.createTextNode(JSON.stringify(window.blocklet, null, 2)))
 
-      fetch(`${window.blocklet.groupPrefix.replace(/\/+$/, '')}/api${window.location.search}`)
+      fetch(`${window.blocklet.prefix.replace(/\/+$/, '')}/api${window.location.search}`)
         .then(response => response.json())
         .then(data => {
           const apiLog = document.getElementById('apiLog')
