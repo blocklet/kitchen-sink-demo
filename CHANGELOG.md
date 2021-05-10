@@ -1,3 +1,7 @@
+## 1.3.3 (May 10, 2021)
+
+- bump version
+
 ## 1.3.2 (April 23, 2021)
 
 - bump-version
