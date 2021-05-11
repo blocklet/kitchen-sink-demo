@@ -1,3 +1,8 @@
+## 1.3.4 (May 11, 2021)
+
+- update publish ci
+- [skip ci] Update README.md
+
 ## 1.3.3 (May 10, 2021)
 
 - bump version
