@@ -1,3 +1,7 @@
+## 1.4.0 (November 30, 2021)
+
+- remove redundant web interface
+
 ## 1.3.5 (May 14, 2021)
 
 - [skip ci] Update README.md
