@@ -22,7 +22,7 @@
     "lint:fix": "eslint --fix app",
     "precommit": "CI=1 npm run lint",
     "prepush": "CI=1 npm run lint",
-    "bundle": "npm run clean && blocklet bundle --zip --create-release",
+    "bundle": "npm run clean && bn bundle --zip --create-release",
     "deploy": "npm run bundle && blocklet deploy .blocklet/bundle"
   },
   "keywords": [

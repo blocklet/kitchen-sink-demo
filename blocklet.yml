@@ -55,34 +55,6 @@ interfaces:
     prefix: '*'
     protocol: http
     port: BLOCKLET_PORT
-  - type: web
-    name: adminUrl
-    path: /admin
-    prefix: '*'
-    protocol: http
-    port: BLOCKLET_PORT
-    services:
-      - name: '@abtnode/auth-service'
-        config:
-          invitedUserOnly: not-first
-          blockUnauthenticated: true
-          blockUnauthorized: true
-  - type: web
-    name: configUrl
-    path: /config
-    prefix: '*'
-    protocol: http
-    port: BLOCKLET_PORT
-    services:
-      - name: '@abtnode/auth-service'
-        config:
-          invitedUserOnly: not-first
-  - type: web
-    name: API
-    path: /api
-    prefix: '*'
-    protocol: http
-    port: BLOCKLET_API_PORT
   - type: service
     name: Echo
     protocol: tcp

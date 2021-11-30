@@ -22,22 +22,6 @@ app.use((req, res, next) => {
   return next();
 });
 
-app.get('/admin', (req, res) => {
-  if (req.locale === 'en') {
-    res.sendDebugJson('Congratulations! you can access the admin dashboard');
-  } else {
-    res.sendDebugJson('太棒了，你能正常访问管理页面中文版');
-  }
-});
-
-app.get('/config', (req, res) => {
-  if (req.locale === 'en') {
-    res.sendDebugJson('Congratulations! you can access the config page');
-  } else {
-    res.sendDebugJson('太棒了，你能正常访问配置页面中文版');
-  }
-});
-
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'view/public.html'));
 });
@@ -57,4 +41,3 @@ app.listen(port, () => {
 });
 
 require('./echo');
-require('./api');
