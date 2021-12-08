@@ -1,3 +1,7 @@
+## 1.4.1 (十二月 08, 2021)
+
+- chore: upgrade blocklet.yml
+
 ## 1.4.0 (November 30, 2021)
 
 - remove redundant web interface
@@ -36,8 +40,6 @@
 - fix: preConfig hook
 
 ## 1.2.10 (March 09, 2021)
-
-
 
 ## 1.2.9 (March 09, 2021)
 

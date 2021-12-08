@@ -1,6 +1,6 @@
 name: kitchen-sink-blocklet
 title: Kitchen Sink
-version: 1.4.0
+version: 1.4.1
 description: Demo blocklet that showing how blocklet works in ABT node
 files:
   - blocklet.md
@@ -43,7 +43,7 @@ environments:
     required: false
     default: 'no'
     secure: false
-specVersion: 1.1.1
+specVersion: 1.2.0
 did: z8ia22AX1PovjTi1YQw8ChgsbeVExYsX4dPFt
 community: ''
 documentation: ''
@@ -76,10 +76,9 @@ requirements:
   abtnode: '>=1.1.10'
 timeout:
   start: 60
-charging:
-  price: 0
-  tokens: []
-  shares: []
+payment:
+  price: []
+  share: []
 children: []
 capabilities:
   clusterMode: false
