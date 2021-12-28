@@ -1,9 +1,5 @@
 # Kitchen Sink Demo
 
-## Install on my ABT Node
-
-[![Install on my ABT Node](https://raw.githubusercontent.com/blocklet/development-guide/main/assets/install_on_abtnode.svg)](https://install.arcblock.io/?action=blocklet-install&meta_url=https%3A%2F%2Fgithub.com%2Fblocklet%2Fkitchen-sink-demo%2Freleases%2Fdownload%2Fv1.4.1%2Fblocklet.json)
-
 ## What's Included?
 
 Demo blocklet that showing how to define a blocklet:
@@ -15,14 +11,14 @@ Demo blocklet that showing how to define a blocklet:
 ## Requirements
 
 - Node.js v12.x or above
-- A running ABT Node instance on dev environment
+- A running Blocklet Server instance on dev environment
 
 ## Getting Started
 
-### 1. Install ABT Node
+### 1. Install Blocklet Server
 
 ```shell
-npm install -g @abtnode/cli
+npm install -g @blocklet/cli
 ```
 
 ### 2. Get the Blocklet
@@ -36,11 +32,11 @@ npm install # or yarn
 ### 3. Setup the node
 
 ```shell
-abtnode init -f
-abtnode start
+blocklet server init -f
+blocklet server start
 ```
 
-> The ABT Node instance is stored under the `.abtnode` directory.
+> The Blocklet Server instance is stored under the `.abtnode` directory.
 
 ### 4. Deploy the Blocklet
 
@@ -50,4 +46,4 @@ npm run deploy
 
 > The blocklet is bundled under the `.blocklet` directory
 
-Then checkout the blocklet in your ABT Node Dashboard.
+Then checkout the blocklet in your Blocklet Server Dashboard.
