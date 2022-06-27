@@ -1,6 +1,6 @@
 name: kitchen-sink-blocklet
 title: Kitchen Sink
-version: 1.4.2
+version: 1.4.3
 description: Demo blocklet that showing how blocklet works in ABT node
 files:
   - blocklet.md
@@ -15,14 +15,14 @@ files:
   - app/view
 repository:
   type: git
-  url: 'git+https://github.com/blocklet/kitchen-sink-demo.git'
+  url: git+https://github.com/blocklet/kitchen-sink-demo.git
 keywords:
   - dapp
   - demo
 author:
   name: polunzh
   email: polunzh@gmail.com
-  url: 'http://github.com/polunzh'
+  url: http://github.com/polunzh
 license: MIT
 group: dapp
 main: app/index.js
@@ -31,19 +31,22 @@ environments:
   - name: FORGE_RELEASE_MIRROR
     description: Custom forge release mirror
     required: false
-    default: 'https://releases.arcblockio.cn'
+    default: https://releases.arcblockio.cn
     secure: false
+    shared: true
   - name: ONLY_START_IN_EVEN_MINUTES
     description: Only start in even minutes
     required: false
     default: 'no'
     secure: false
+    shared: true
   - name: ONLY_YES_OR_NO
     description: To test preConfig. can only be yes or no
     required: false
     default: 'no'
     secure: false
-specVersion: 1.2.0
+    shared: true
+specVersion: 1.2.7
 did: z8ia22AX1PovjTi1YQw8ChgsbeVExYsX4dPFt
 community: ''
 documentation: ''
@@ -82,3 +85,4 @@ payment:
 children: []
 capabilities:
   clusterMode: false
+  component: true
