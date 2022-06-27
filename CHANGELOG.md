@@ -1,3 +1,8 @@
+## 1.4.3 (六月 27, 2022)
+
+- fix: resize the logo
+- [skip ci] Update README.md
+
 ## 1.4.2 (December 28, 2021)
 
 - chore: update docs/scripts/actions (abtnode rebranding)
