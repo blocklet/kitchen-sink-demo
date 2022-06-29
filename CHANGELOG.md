@@ -1,3 +1,7 @@
+## 1.4.4 (六月 29, 2022)
+
+- fix: bundle error when READM.md has a link with folder
+
 ## 1.4.3 (六月 27, 2022)
 
 - fix: resize the logo
