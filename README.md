@@ -10,7 +10,7 @@ Demo blocklet that showing how to define a blocklet:
 
 - Meta, checkout [blocklet.yml](./blocklet.yml)
 - Interfaces: checkout [app/index.js](./app/index.js)
-- Hooks: checkout [app/hooks](./app/hooks)
+<!-- - Hooks: checkout [app/hooks](./app/hooks) -->
 
 ## Requirements
 
