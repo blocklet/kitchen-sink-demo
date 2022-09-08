@@ -32,10 +32,10 @@
   "author": "polunzh <polunzh@gmail.com> (http://github.com/polunzh)",
   "license": "MIT",
   "dependencies": {
-    "@abtnode/util": "^1.1.9",
+    "@blocklet/sdk": "^1.8.17",
     "axon": "^2.0.3",
-    "dotenv": "^8.2.0",
-    "express": "^4.17.1"
+    "dotenv": "^8.6.0",
+    "express": "^4.18.1"
   },
   "gitHead": "e5764f753181ed6a7c615cd4fc6682aacf0cb7cd"
 }

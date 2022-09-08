@@ -1,5 +1,5 @@
 /* eslint-disable */
-require('@abtnode/util/lib/error-handler');
+require('@blocklet/sdk/lib/error-handler');
 
 console.log('#################################');
 console.log('### This is pre config hook ###');
