@@ -1,12 +1,13 @@
 name: kitchen-sink-blocklet
 title: Kitchen Sink
-version: 1.4.4
+version: 1.4.5
 description: Demo blocklet that showing how blocklet works in ABT node
 files:
   - app/hooks/post-install.js
   - app/hooks/pre-stop.js
   - app/hooks/pre-install.js
   - app/hooks/pre-start.js
+  - app/hooks/post-start.js
   - app/hooks/pre-uninstall.js
   - app/hooks/pre-config.js
   - app/view
@@ -69,7 +70,6 @@ scripts:
   preInstall: node app/hooks/pre-install.js
   postInstall: node app/hooks/post-install.js
   preStart: node app/hooks/pre-start.js
-  postStart: node app/hooks/post-start.js
   preStop: node app/hooks/pre-stop.js
   preUninstall: node app/hooks/pre-uninstall.js
   preConfig: node app/hooks/pre-config.js
