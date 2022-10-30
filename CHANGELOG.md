@@ -1,3 +1,7 @@
+## 1.4.5 (October 31, 2022)
+
+- [skip ci] upgrade deps
+
 ## 1.4.4 (六月 29, 2022)
 
 - fix: bundle error when READM.md has a link with folder
