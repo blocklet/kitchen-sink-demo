@@ -1,0 +1,357 @@
+{
+  "form": {
+    "labelCol": 6,
+    "wrapperCol": 12,
+    "layout": "vertical",
+    "style": {
+      "padding": "16px 16px 16px 16px",
+      "borderRadius": "4px 4px 4px 4px"
+    },
+    "colon": false
+  },
+  "schema": {
+    "type": "object",
+    "properties": {
+      "ihfpu2zhbjj": {
+        "type": "string",
+        "x-component": "Text",
+        "x-component-props": {
+          "content": "这个是使用偏好设计工具设计出来的表单，我们来看看他的能力吧",
+          "style": {
+            "margin": "0px 0px 16px 0px"
+          }
+        },
+        "x-designable-id": "ihfpu2zhbjj",
+        "x-index": 0
+      },
+      "xsjz1kslljh": {
+        "type": "string",
+        "x-component": "Text",
+        "x-component-props": {
+          "content": "基本用法",
+          "style": {
+            "margin": "0px 0px 16px 0px"
+          },
+          "mode": "h2"
+        },
+        "x-designable-id": "xsjz1kslljh",
+        "x-index": 1
+      },
+      "en2vzav01fp": {
+        "type": "string",
+        "x-component": "Text",
+        "x-component-props": {
+          "content": "每个需要输入的字段都需要设置“字段标识”",
+          "style": {
+            "margin": "0px 0px 16px 0px"
+          }
+        },
+        "x-designable-id": "en2vzav01fp",
+        "x-index": 2
+      },
+      "input": {
+        "type": "string",
+        "title": "限长文本",
+        "x-decorator": "FormItem",
+        "x-component": "Input",
+        "x-validator": [
+          {
+            "whitespace": true,
+            "triggerType": "onInput",
+            "required": true,
+            "max": 10,
+            "min": 1
+          }
+        ],
+        "x-component-props": {},
+        "x-decorator-props": {},
+        "required": true,
+        "name": "input",
+        "x-designable-id": "dhiqxhb0tr9",
+        "x-index": 3,
+        "description": "这是1个文本输入框，长度不超过10个字符"
+      },
+      "email": {
+        "type": "string",
+        "title": "电子邮箱",
+        "x-decorator": "FormItem",
+        "x-component": "Input",
+        "x-validator": "email",
+        "x-component-props": {},
+        "x-decorator-props": {},
+        "name": "email",
+        "required": true,
+        "x-designable-id": "wdpbmmk89xz",
+        "x-index": 4
+      },
+      "text": {
+        "type": "string",
+        "title": "多行文本",
+        "x-decorator": "FormItem",
+        "x-component": "Input.TextArea",
+        "x-validator": [],
+        "x-component-props": {
+          "autoSize": true,
+          "showCount": true
+        },
+        "x-decorator-props": {},
+        "name": "text",
+        "x-designable-id": "vf3h8r6nhs7",
+        "x-index": 5,
+        "required": true
+      },
+      "5rzjmq4l8g4": {
+        "type": "string",
+        "x-component": "Text",
+        "x-component-props": {
+          "content": "高级用法",
+          "style": {
+            "margin": "0px 0px 16px 0px"
+          },
+          "mode": "h2"
+        },
+        "x-designable-id": "5rzjmq4l8g4",
+        "x-index": 6
+      },
+      "yjln72pdgq9": {
+        "type": "string",
+        "x-component": "Text",
+        "x-component-props": {
+          "content": "接下来我们看一些更加高级的用法，比如布局，下面这个表单是三列布局",
+          "style": {
+            "margin": "0px 0px 16px 0px"
+          }
+        },
+        "x-designable-id": "yjln72pdgq9",
+        "x-index": 7
+      },
+      "e0yjx4qmygv": {
+        "type": "void",
+        "x-component": "FormGrid",
+        "x-validator": [],
+        "x-component-props": {},
+        "x-designable-id": "e0yjx4qmygv",
+        "x-index": 8,
+        "properties": {
+          "46io7xtq27v": {
+            "type": "void",
+            "x-component": "FormGrid.GridColumn",
+            "x-designable-id": "46io7xtq27v",
+            "x-index": 0,
+            "properties": {
+              "tags": {
+                "title": "标签交互",
+                "x-decorator": "FormItem",
+                "x-component": "Select",
+                "x-validator": [],
+                "x-component-props": {
+                  "placeholder": "输入或者选择标签",
+                  "mode": "tags",
+                  "maxTagCount": 3
+                },
+                "x-decorator-props": {},
+                "name": "tags",
+                "x-designable-id": "wene5xiip2n",
+                "x-index": 0
+              }
+            }
+          },
+          "5wfxo9ilscq": {
+            "type": "void",
+            "x-component": "FormGrid.GridColumn",
+            "x-designable-id": "5wfxo9ilscq",
+            "x-index": 1,
+            "properties": {
+              "daterange": {
+                "type": "string[]",
+                "title": "日期范围",
+                "x-decorator": "FormItem",
+                "x-component": "DatePicker.RangePicker",
+                "x-validator": [],
+                "x-component-props": {
+                  "placeholder": ""
+                },
+                "x-decorator-props": {},
+                "name": "daterange",
+                "x-designable-id": "itqot35y6iu",
+                "x-index": 0
+              }
+            }
+          },
+          "s4w3s4tl4dn": {
+            "type": "void",
+            "x-component": "FormGrid.GridColumn",
+            "x-designable-id": "s4w3s4tl4dn",
+            "x-index": 2,
+            "properties": {
+              "time": {
+                "type": "string",
+                "title": "时间",
+                "x-decorator": "FormItem",
+                "x-component": "TimePicker",
+                "x-validator": [],
+                "x-component-props": {},
+                "x-decorator-props": {},
+                "name": "time",
+                "x-designable-id": "q25neexv3zv",
+                "x-index": 0
+              }
+            }
+          }
+        }
+      },
+      "sfcpxdgj92a": {
+        "type": "void",
+        "x-component": "FormGrid",
+        "x-validator": [],
+        "x-component-props": {},
+        "x-designable-id": "sfcpxdgj92a",
+        "x-index": 9,
+        "properties": {
+          "bed0n20v65h": {
+            "type": "void",
+            "x-component": "FormGrid.GridColumn",
+            "x-designable-id": "bed0n20v65h",
+            "x-index": 0,
+            "properties": {
+              "pass": {
+                "title": "加密存储",
+                "x-decorator": "FormItem",
+                "x-component": "Password",
+                "x-validator": [],
+                "x-component-props": {},
+                "x-decorator-props": {},
+                "name": "pass",
+                "x-designable-id": "dxba2gzw4pc",
+                "x-index": 0
+              }
+            }
+          },
+          "66j76bug8h9": {
+            "type": "void",
+            "x-component": "FormGrid.GridColumn",
+            "x-designable-id": "66j76bug8h9",
+            "x-index": 1,
+            "properties": {
+              "timerange": {
+                "type": "string[]",
+                "title": "时间区间",
+                "x-decorator": "FormItem",
+                "x-component": "TimePicker.RangePicker",
+                "x-validator": [],
+                "x-component-props": {},
+                "x-decorator-props": {},
+                "name": "timerange",
+                "x-designable-id": "fke716kfytw",
+                "x-index": 0
+              }
+            }
+          },
+          "ih46naozjct": {
+            "type": "void",
+            "x-component": "FormGrid.GridColumn",
+            "x-designable-id": "ih46naozjct",
+            "x-index": 2,
+            "properties": {
+              "number": {
+                "type": "number",
+                "title": "数字输入",
+                "x-decorator": "FormItem",
+                "x-component": "NumberPicker",
+                "x-validator": [],
+                "x-component-props": {},
+                "x-decorator-props": {},
+                "name": "number",
+                "x-designable-id": "vsoy0rg9vsa",
+                "x-index": 0
+              }
+            }
+          }
+        }
+      },
+      "mjlfswbr4me": {
+        "type": "string",
+        "x-component": "Text",
+        "x-component-props": {
+          "content": "下面是三个评分",
+          "style": {
+            "margin": "0px 0px 16px 0px"
+          }
+        },
+        "x-designable-id": "mjlfswbr4me",
+        "x-index": 10
+      },
+      "ctywznrpqo0": {
+        "type": "void",
+        "x-component": "FormGrid",
+        "x-validator": [],
+        "x-component-props": {},
+        "x-designable-id": "ctywznrpqo0",
+        "x-index": 11,
+        "properties": {
+          "9nf43xdmpoi": {
+            "type": "void",
+            "x-component": "FormGrid.GridColumn",
+            "x-designable-id": "9nf43xdmpoi",
+            "x-index": 0,
+            "properties": {
+              "quality": {
+                "type": "number",
+                "title": "商品质量",
+                "x-decorator": "FormItem",
+                "x-component": "Rate",
+                "x-validator": [],
+                "x-component-props": {},
+                "x-decorator-props": {},
+                "name": "quality",
+                "x-designable-id": "ip0wn1j0e2v",
+                "x-index": 0
+              }
+            }
+          },
+          "r9sv0c3g1w4": {
+            "type": "void",
+            "x-component": "FormGrid.GridColumn",
+            "x-designable-id": "r9sv0c3g1w4",
+            "x-index": 1,
+            "properties": {
+              "service": {
+                "type": "number",
+                "title": "服务态度",
+                "x-decorator": "FormItem",
+                "x-component": "Rate",
+                "x-validator": [],
+                "x-component-props": {},
+                "x-decorator-props": {},
+                "name": "service",
+                "x-designable-id": "bcqy3m99owg",
+                "x-index": 0
+              }
+            }
+          },
+          "a3a3n9qj0v5": {
+            "type": "void",
+            "x-component": "FormGrid.GridColumn",
+            "x-designable-id": "a3a3n9qj0v5",
+            "x-index": 2,
+            "properties": {
+              "deliver": {
+                "type": "number",
+                "title": "物流速度",
+                "x-decorator": "FormItem",
+                "x-component": "Rate",
+                "x-validator": [],
+                "x-component-props": {},
+                "x-decorator-props": {},
+                "name": "deliver",
+                "x-designable-id": "bh0n3ww6uxk",
+                "x-index": 0
+              }
+            }
+          }
+        }
+      }
+    },
+    "x-designable-id": "7x25ozanwu4"
+  }
+}

@@ -3,14 +3,9 @@ title: Kitchen Sink
 version: 1.4.5
 description: Demo blocklet that showing how blocklet works in ABT node
 files:
-  - app/hooks/post-install.js
-  - app/hooks/pre-stop.js
-  - app/hooks/pre-install.js
-  - app/hooks/pre-start.js
-  - app/hooks/post-start.js
-  - app/hooks/pre-uninstall.js
-  - app/hooks/pre-config.js
-  - app/view
+  - app
+  - migration
+  - "!app/ignored.js"
 repository:
   type: git
   url: git+https://github.com/blocklet/kitchen-sink-demo.git
@@ -38,6 +33,18 @@ environments:
     default: 'no'
     secure: false
     shared: true
+  - name: SECURE_ENV1
+    description: secure env1
+    required: true
+    default: ''
+    secure: true
+    shared: false
+  - name: SECURE_ENV2
+    description: secure env2
+    required: true
+    default: ''
+    secure: true
+    shared: false
   - name: ONLY_YES_OR_NO
     description: To test preConfig. can only be yes or no
     required: false
@@ -56,14 +63,6 @@ interfaces:
     prefix: '*'
     protocol: http
     port: BLOCKLET_PORT
-  - type: service
-    name: Echo
-    protocol: tcp
-    port:
-      internal: BLOCKLET_ECHO_PORT
-      external: 8888
-    path: /
-    prefix: '*'
 screenshots: []
 scripts:
   dev: node app index.js
