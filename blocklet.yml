@@ -1,11 +1,11 @@
 name: kitchen-sink-blocklet
 title: Kitchen Sink
-version: 1.4.5
+version: 1.5.0
 description: Demo blocklet that showing how blocklet works in ABT node
 files:
   - app
   - migration
-  - "!app/ignored.js"
+  - '!app/ignored.js'
 repository:
   type: git
   url: git+https://github.com/blocklet/kitchen-sink-demo.git
@@ -51,7 +51,7 @@ environments:
     default: 'no'
     secure: false
     shared: true
-specVersion: 1.2.7
+specVersion: 1.2.8
 did: z8ia22AX1PovjTi1YQw8ChgsbeVExYsX4dPFt
 community: ''
 documentation: ''
@@ -79,7 +79,8 @@ timeout:
 payment:
   price: []
   share: []
-children: []
 capabilities:
   clusterMode: false
   component: true
+  navigation: true
+components: []

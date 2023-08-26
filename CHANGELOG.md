@@ -1,3 +1,8 @@
+## 1.5.0 (August 26, 2023)
+
+- chore: add more test case
+- chore: upgrade deps
+
 ## 1.4.5 (October 31, 2022)
 
 - [skip ci] upgrade deps
