@@ -1,3 +1,7 @@
+## 1.5.1 (September 04, 2023)
+
+- chore: upgrade deps
+
 ## 1.5.0 (August 26, 2023)
 
 - chore: add more test case
