@@ -16,3 +16,4 @@ exec-child.js
 *.log
 coverage
 _test
+.env.local
