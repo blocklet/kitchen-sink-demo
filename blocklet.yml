@@ -1,6 +1,6 @@
 name: kitchen-sink-blocklet
 title: Kitchen Sink
-version: 1.5.1
+version: 1.5.2
 description: Demo blocklet that showing how blocklet works in ABT node
 files:
   - app
@@ -13,9 +13,9 @@ keywords:
   - dapp
   - demo
 author:
-  name: polunzh
-  email: polunzh@gmail.com
-  url: http://github.com/polunzh
+  name: ArcBlock
+  email: blocklet@arcblock.io
+  url: https://github.com/blocklet
 license: MIT
 group: dapp
 main: app/index.js
@@ -53,8 +53,8 @@ environments:
     shared: true
 specVersion: 1.2.8
 did: z8ia22AX1PovjTi1YQw8ChgsbeVExYsX4dPFt
-community: ''
-documentation: ''
+community: https://community.arcblock.io
+documentation: https://developer.blocklet.io
 homepage: ''
 interfaces:
   - type: web
