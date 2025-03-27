@@ -66,12 +66,12 @@ interfaces:
 screenshots: []
 scripts:
   dev: node app index.js
-  # preInstall: node app/hooks/pre-install.js
-  # postInstall: node app/hooks/post-install.js
-  # preStart: node app/hooks/pre-start.js
-  # preStop: node app/hooks/pre-stop.js
-  # preUninstall: node app/hooks/pre-uninstall.js
-  # preConfig: node app/hooks/pre-config.js
+  preInstall: node app/hooks/pre-install.js
+  postInstall: node app/hooks/post-install.js
+  preStart: node app/hooks/pre-start.js
+  preStop: node app/hooks/pre-stop.js
+  preUninstall: node app/hooks/pre-uninstall.js
+  preConfig: node app/hooks/pre-config.js
 requirements:
   abtnode: '>=1.1.10'
 timeout:
@@ -83,7 +83,8 @@ payment:
 capabilities:
   clusterMode: false
   component: true
-  navigation: true
+  navigation: false
+  mcp: true
 components: []
 events:
   - type: kitchen.full

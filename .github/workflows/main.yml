@@ -24,21 +24,10 @@ jobs:
       - name: Blocklet workflow
         uses: blocklet/action-workflow@v1
         with:
-          skip-upload: false
+          deps-server-version: beta
+          skip-deploy: false
+          skip-release: true
           bundle-command: yarn bundle
           store-endpoint: ${{ secrets.STORE_ENDPOINT_DEV }}
           store-access-token: ${{ secrets.STORE_ACCESS_TOKEN_DEV }}
-          server-endpoint: ${{ secrets.AWS_NODE_ENDPOINT }}
-          server-access-key: ${{ secrets.AWS_NODE_ACCESS_KEY }}
-          server-access-secret: ${{ secrets.AWS_NODE_ACCESS_SECRET }}
           github-token: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Blocklet workflow
-        uses: blocklet/action-workflow@v1
-        with:
-          skip-deploy: false
-          skip-bundle: true
-          skip-release: true
-          server-endpoint: ${{ secrets.ALIYUN_NODE_ENDPOINT }}
-          server-access-key: ${{ secrets.ALIYUN_NODE_ACCESS_KEY }}
-          server-access-secret: ${{ secrets.ALIYUN_NODE_ACCESS_SECRET }}
