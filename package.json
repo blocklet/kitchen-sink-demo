@@ -22,8 +22,8 @@
     "lint:fix": "eslint --fix app",
     "precommit": "CI=1 npm run lint",
     "prepush": "CI=1 npm run lint",
-    "bundle": "npm run clean && blocklet bundle --zip --create-release",
-    "deploy": "npm run bundle && blocklet deploy .blocklet/bundle"
+    "bundle": "npm run clean && bn bundle --zip --create-release",
+    "deploy": "npm run bundle && bn deploy .blocklet/bundle"
   },
   "keywords": [
     "dapp",
@@ -32,11 +32,15 @@
   "author": "polunzh <polunzh@gmail.com> (http://github.com/polunzh)",
   "license": "MIT",
   "dependencies": {
-    "@blocklet/sdk": "^1.16.23",
+    "@blocklet/logger": "^1.16.40",
+    "@blocklet/sdk": "^1.16.40",
+    "@modelcontextprotocol/sdk": "^1.8.0",
     "axon": "^2.0.3",
     "dotenv": "^8.6.0",
     "express": "^4.18.1",
-    "lodash": "^4.17.21"
+    "fast-uri": "^3.0.6",
+    "lodash": "^4.17.21",
+    "zod": "^3.24.2"
   },
   "gitHead": "e5764f753181ed6a7c615cd4fc6682aacf0cb7cd"
 }

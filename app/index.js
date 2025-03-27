@@ -1,8 +1,19 @@
 require('dotenv').config();
+
 const path = require('path');
+const EventBus = require('@blocklet/sdk/service/eventbus');
+const cookieParser = require('cookie-parser');
+const morgan = require('morgan');
+const logger = require('@blocklet/logger');
 
 /* eslint-disable no-underscore-dangle */
 const express = require('express');
+
+const events = require('./libs/event');
+const { attachSSEServer } = require('./mcp/sse');
+const echoServer = require('./mcp/echo');
+
+events.init();
 
 const pick = (obj, keys) => keys.reduce((o, key) => {
   o[key] = obj[key];
@@ -10,6 +21,13 @@ const pick = (obj, keys) => keys.reduce((o, key) => {
 }, {})
 
 const app = express();
+
+app.set('trust proxy', true);
+
+app.use(cookieParser());
+app.use(morgan('combined', { stream: logger.getAccessLogStream() }));
+
+attachSSEServer(app, echoServer);
 
 app.use((req, res, next) => {
   req.locale = req.query.__blang__ || 'en';
@@ -24,6 +42,19 @@ app.use((req, res, next) => {
 
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'view/public.html'));
+});
+
+app.get('/event', async (req, res) => {
+  try {
+    const event = req.query.full ? 'kitchen.full' : 'kitchen.empty';
+    await EventBus.publish(event, {
+      data: { object: { message: 'Hello, world!' } },
+    });
+    res.json({ message: `event ${event} emitted` });
+  } catch (err) {
+    logger.error(err);
+    res.status(500).json({ error: err.message });
+  }
 });
 
 app.get('/api', (req, res) => {
