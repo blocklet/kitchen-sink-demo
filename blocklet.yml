@@ -66,16 +66,17 @@ interfaces:
 screenshots: []
 scripts:
   dev: node app index.js
-  preInstall: node app/hooks/pre-install.js
-  postInstall: node app/hooks/post-install.js
-  preStart: node app/hooks/pre-start.js
-  preStop: node app/hooks/pre-stop.js
-  preUninstall: node app/hooks/pre-uninstall.js
-  preConfig: node app/hooks/pre-config.js
+  # preInstall: node app/hooks/pre-install.js
+  # postInstall: node app/hooks/post-install.js
+  # preStart: node app/hooks/pre-start.js
+  # preStop: node app/hooks/pre-stop.js
+  # preUninstall: node app/hooks/pre-uninstall.js
+  # preConfig: node app/hooks/pre-config.js
 requirements:
   abtnode: '>=1.1.10'
 timeout:
-  start: 60
+  start: 10
+  script: 3
 payment:
   price: []
   share: []
@@ -84,3 +85,8 @@ capabilities:
   component: true
   navigation: true
 components: []
+events:
+  - type: kitchen.full
+    description: dummy event from kitchen sink blocklet
+  - type: kitchen.empty
+    description: dummy event from kitchen sink blocklet
