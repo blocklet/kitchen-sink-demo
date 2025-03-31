@@ -1,7 +1,7 @@
 name: kitchen-sink-blocklet
 title: Kitchen Sink
 version: 1.5.3
-description: Demo blocklet that showing how blocklet works in ABT node
+description: Demo blocklet for blocklet platform capabilities
 files:
   - app
   - migration
@@ -63,7 +63,8 @@ interfaces:
     prefix: '*'
     protocol: http
     port: BLOCKLET_PORT
-screenshots: []
+screenshots:
+  - 625bc2fee5cd826d6b2f612720ec51c5.png
 scripts:
   dev: node app index.js
   preInstall: node app/hooks/pre-install.js
