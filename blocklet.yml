@@ -1,6 +1,6 @@
 name: kitchen-sink-blocklet
 title: Kitchen Sink
-version: 1.5.3
+version: 1.5.4
 description: Demo blocklet for blocklet platform capabilities
 files:
   - app
@@ -63,6 +63,7 @@ interfaces:
     prefix: '*'
     protocol: http
     port: BLOCKLET_PORT
+    proxyBehavior: service
 screenshots:
   - 625bc2fee5cd826d6b2f612720ec51c5.png
 scripts:
@@ -92,3 +93,4 @@ events:
     description: dummy event from kitchen sink blocklet
   - type: kitchen.empty
     description: dummy event from kitchen sink blocklet
+egress: true

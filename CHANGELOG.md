@@ -1,3 +1,8 @@
+## 1.5.4 (三月 31, 2025)
+
+- feat: support basic mcp server
+- feat: support blocklet events
+
 ## 1.5.3 (February 16, 2024)
 
 - chore: upgrade deps
