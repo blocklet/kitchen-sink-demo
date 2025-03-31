@@ -25,7 +25,7 @@ jobs:
         uses: blocklet/action-workflow@v1
         with:
           deps-server-version: beta
-          skip-deploy: false
+          skip-deploy: true
           skip-release: true
           bundle-command: yarn bundle
           store-endpoint: ${{ secrets.STORE_ENDPOINT_DEV }}
