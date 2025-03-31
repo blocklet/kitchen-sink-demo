@@ -25,6 +25,7 @@ jobs:
         uses: blocklet/action-workflow@v1
         with:
           deps-server-version: beta
+          skip-upload: false
           skip-deploy: true
           skip-release: true
           bundle-command: yarn bundle
