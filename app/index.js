@@ -10,7 +10,7 @@ const logger = require('@blocklet/logger');
 const express = require('express');
 
 const events = require('./libs/event');
-const { attachSSEServer } = require('./mcp/sse');
+const { attachMcpRoutes, attachMcpServer } = require('./mcp/streamable');
 const echoServer = require('./mcp/echo');
 
 events.init();
@@ -27,7 +27,7 @@ app.set('trust proxy', true);
 app.use(cookieParser());
 app.use(morgan('combined', { stream: logger.getAccessLogStream() }));
 
-attachSSEServer(app, echoServer);
+attachMcpRoutes(app);
 
 app.use((req, res, next) => {
   req.locale = req.query.__blang__ || 'en';
@@ -66,7 +66,9 @@ app.get('/api', (req, res) => {
 });
 
 const port = Number(process.env.BLOCKLET_PORT || 3030);
-app.listen(port, () => {
+app.listen(port, async () => {
+  await attachMcpServer(echoServer);
+
   // eslint-disable-next-line no-console
   console.log(`Blocklet ready at ${port}`);
 });
