@@ -1,6 +1,6 @@
 name: kitchen-sink-blocklet
 title: Kitchen Sink
-version: 1.5.4
+version: 1.5.5
 description: Demo blocklet for blocklet platform capabilities
 files:
   - app

@@ -1,3 +1,7 @@
+## 1.5.5 (四月 29, 2025)
+
+- feat: support streamable http transport
+
 ## 1.5.4 (三月 31, 2025)
 
 - feat: support basic mcp server
